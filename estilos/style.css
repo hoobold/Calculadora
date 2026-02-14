@@ -7,8 +7,9 @@
         font-size: 1em;
     }
 
-    .botoes:hover {
-      text-decoration: none;
+    .botoes:focus {
+      outline: none;
+      background-color: initial;
     }
 
     .display {
