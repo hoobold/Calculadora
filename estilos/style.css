@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 95vh;
     font-family: Arial, sans-serif;
 }
 
@@ -51,9 +51,12 @@
   #display {
     width: 94%;
     height: 60px;
+    background: gray;
+    color: white;
     font-size: 26px;
     text-align: right;
     padding: 10px;
+    padding-top: 10px;
     border: none;
     border-radius: 8px;
     margin-bottom: 5px;
@@ -70,10 +73,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    padding-top: 10px;
 }
 
   button {
-    padding: 18px;
+    padding: 15px;
     font-size: 18px;
     border: none;
     border-radius: 8px;
