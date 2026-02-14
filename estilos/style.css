@@ -16,16 +16,6 @@
       touch-action: manipulation;
     }
 
-    button:active {
-      background: #555;
-}
-    .operador {
-      background: #ff9500;
-}
-    .operador:active {
-      background: #e08900;
-}
-
     .display {
       height: 40px;
       font-size: 1.2em;
@@ -50,7 +40,6 @@
 }
 
   .calculadora {
-    width: 95%;
     background: #222;
     padding: 1rem;
     border-radius: 12px;
@@ -59,14 +48,14 @@
 }
 
   #display {
-    background: #000;
-    color: #0f0;
-    font-size: 2rem;
-    padding: 1rem;
-    border-radius: 5px;
+    width: 94%;
+    height: 60px;
+    font-size: 26px;
     text-align: right;
-    overflow-x: auto;
-    margin-bottom: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
   .historico {
@@ -79,23 +68,18 @@
   .botoes { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    gap: 10px;
 }
 
   button {
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 18px;
+    font-size: 18px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #444;
-    color: #fff;
-
-    outline: none;
-    user-select: none;
-    touch-action: manipulation;
-
-    transition: background 0.2s;
+    background: #333;
+    color: white;
+    transition: 0.2s;
 }
 
   button:hover {
@@ -103,19 +87,12 @@
     transition: .5s;
     color: black;
 }
-  button:active {
-    background: #555;
-}
 
   .operador {
     background: #ff9500;
 }
 
   .operador:hover {
-    background: #e08900;
-}
-
-  .operador:active {
     background: #e08900;
 }
 
