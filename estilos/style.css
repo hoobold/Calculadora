@@ -4,15 +4,14 @@
     .botoes {
         width: 50px;
         height: 50px;
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .display {
         height: 40px;
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 }
-
 
     body {
     background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
@@ -42,11 +41,11 @@
     margin-bottom: 5px;
 }
 
-.historico {
-    color: #aaa;
-    text-align: right;
-    font-size: 14px;
-    min-height: 20px;
+  .historico {
+      color: #aaa;
+      text-align: right;
+      font-size: 14px;
+      min-height: 20px;
 }
 
   .botoes { 
