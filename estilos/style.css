@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   button {
      background: #333;
      color: white;
