@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Profissional</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <div class="calculadora">
+        <div class="historico" id="historico"></div>
+        <input type="text" id="display" disabled>
+
+        <div class="botoes">
+            <button onclick="limpar()" class="limpar">C</button>
+            <button onclick="apagar()">⌫</button>
+            <button onclick="porcentagem()" class="operador">%</button>
+            <button onclick="escolherOperador('/')" class="operador">÷</button>
+
+            <button onclick="adicionarNumero('7')">7</button>
+            <button onclick="adicionarNumero('8')">8</button>
+            <button onclick="adicionarNumero('9')">9</button>
+            <button onclick="escolherOperador('*')" class="operador">*</button>
+
+            <button onclick="adicionarNumero('4')">4</button>
+            <button onclick="adicionarNumero('5')">5</button>
+            <button onclick="adicionarNumero('6')">6</button>
+            <button onclick="escolherOperador('-')" class="operador">-</button>
+
+            <button onclick="adicionarNumero('1')">1</button>
+            <button onclick="adicionarNumero('2')">2</button>
+            <button onclick="adicionarNumero('3')">3</button>
+            <button onclick="escolherOperador('+')" class="operador">+</button>
+
+            <button onclick="adicionarNumero('0')">0</button>
+            <button onclick="adicionarNumero('.')">.</button>
+            <button onclick="calcular()" class="igual">=</button>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
