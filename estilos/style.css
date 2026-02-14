@@ -16,6 +16,16 @@
       touch-action: manipulation;
     }
 
+    button:active {
+      background: #555;
+}
+    .operador {
+      background: #ff9500;
+}
+    .operador:active {
+      background: #e08900;
+}
+
     .display {
       height: 40px;
       font-size: 1.2em;
@@ -35,27 +45,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
 }
 
   .calculadora {
+    width: 95%;
     background: #222;
-    padding: 20px;
-    border-radius: 15px;
-    width: 320px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
   #display {
-    width: 94%;
-    height: 60px;
-    font-size: 26px;
+    background: #000;
+    color: #0f0;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
     text-align: right;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 5px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
 }
 
   .historico {
@@ -68,18 +79,23 @@
   .botoes { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0.5rem;
 }
 
   button {
-    padding: 18px;
-    font-size: 18px;
+    padding: 1rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #333;
-    color: white;
-    transition: 0.2s;
+    background: #444;
+    color: #fff;
+
+    outline: none;
+    user-select: none;
+    touch-action: manipulation;
+
+    transition: background 0.2s;
 }
 
   button:hover {
@@ -87,12 +103,19 @@
     transition: .5s;
     color: black;
 }
+  button:active {
+    background: #555;
+}
 
   .operador {
     background: #ff9500;
 }
 
   .operador:hover {
+    background: #e08900;
+}
+
+  .operador:active {
     background: #e08900;
 }
 
