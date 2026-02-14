@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@media (max-width: 768px) {
+  button {
+     background: #333;
+     color: white;
+     border: none;
+  }
+}
+
+
     body {
     background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
     display: flex;
