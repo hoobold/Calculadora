@@ -7,6 +7,10 @@
         font-size: 1em;
     }
 
+    .botoes:hover {
+      text-decoration: none;
+    }
+
     .display {
       height: 40px;
       font-size: 1.2em;
@@ -18,9 +22,8 @@
       border-radius: 15px;
       width: 320px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      }
 }
-    
-    }
 
     body {
     background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
