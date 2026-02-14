@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
 @media (min-width: 600px) and (max-width: 1200px) {
-  
+
+    body {
+      background: cyan;
+      min-height: 95vh;
+    }
+
     button {
       padding: 1rem;
       font-size: 1.5rem;
@@ -20,6 +25,8 @@
       height: 40px;
       font-size: 1.2em;
       width: 95vw;
+      background: gray;
+      color: white;
     }
 
     .calculadora {
