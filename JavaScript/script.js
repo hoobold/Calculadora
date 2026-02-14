@@ -1,4 +1,3 @@
-
 let numeroAtual = '';
 let numeroAnterior = '';
 let operador = '';
@@ -106,18 +105,18 @@ function atualizarHistorico() {
     });
 }
 
-document.addEventListener('keydown', function(e) {
-    if (/^[0-9]$/.test(e.key)) {
+    document.addEventListener('keydown', function(e) {
+        if (/^[0-9]$/.test(e.key)) {
         adicionarNumero(e.key);
-    } else if (e.key === '.') {
+        } else if (e.key === '.') {
         adicionarNumero('.');
-    } else if (['+', '-', '*', '/'].includes(e.key)) {
+        } else if (['+', '-', '*', '/'].includes(e.key)) {
         escolherOperador(e.key);
-    } else if (e.key === 'Enter') {
+        } else if (e.key === 'Enter') {
         calcular();
-    } else if (e.key === 'Backspace') {
+        } else if (e.key === 'Backspace') {
         apagar();
-    } else if (e.key === 'Escape') {
+        } else if (e.key === 'Escape') {
         limpar();
     }
 });
